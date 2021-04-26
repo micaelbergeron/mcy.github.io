@@ -174,7 +174,7 @@ stack overflows. All is well.</p>
 
 <p>But this is C. We want to rewrite all of the world’s C++ in Rust, but
 unfortunately that’s going to take about a decade, so in the meantime new Rust
-must be able to call existing C++, and vise-versa. C++ has a much crazier ABI,
+must be able to call existing C++, and vice-versa. C++ has a much crazier ABI,
 and while Rust gives us the minimum of passing control to C, libraries like
 <a href="https://cxx.rs/"><code class="language-plaintext highlighter-rouge">cxx</code></a> need to provide a bridge on top of this for Rust and C++ to talk to each
 other.</p>
@@ -723,7 +723,7 @@ now freely call the move constructor just like any other <code class="language-p
 <figure class="highlight" pretty-lang="Rust"><pre><code class="language-rust" data-lang="rust"><span class="nd">emplace!</span><span class="p">(</span><span class="k">let</span> <span class="n">y</span> <span class="o">=</span> <span class="nf">mov</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>  <span class="c">// Calls the move constructor.</span>
 <span class="k">let</span> <span class="n">boxed</span> <span class="o">=</span> <span class="nf">make_box</span><span class="p">(</span><span class="nf">mov</span><span class="p">(</span><span class="n">y</span><span class="p">));</span>  <span class="c">// Move onto the heap. </span></code></pre></figure>
 
-<h2 id="the-langauge-lawyering-part"><a href="#the-langauge-lawyering-part">The Langauge-Lawyering Part</a></h2>
+<h2 id="the-language-lawyering-part"><a href="#the-language-lawyering-part">The Language-Lawyering Part</a></h2>
 
 <p>(If you don’t care for language-lawyering, you can skip this part.)</p>
 
